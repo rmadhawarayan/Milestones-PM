@@ -50,6 +50,7 @@ global class Milestone1_Email_Handler implements Messaging.InboundEmailHandler
     
     global Messaging.InboundEmailResult handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope) 
     {
+    	System.debug('***** RMADHAWARAYAN - 05/09/2011 - CREATING A SIMPLE CHANGE IN CODE TO BE ABLE TO UNDERSTAND GITHUB CHECKIN PROCESS **** ');
         Messaging.InboundEmailResult result = new Messaging.InboundEmailresult();
         if(email.inReplyTo != null && email.inReplyTo.length() > 0)
         {
